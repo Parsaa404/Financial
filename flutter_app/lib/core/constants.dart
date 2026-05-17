@@ -4,7 +4,7 @@ class AppConstants {
 
   static const String appName = 'FinanceApp';
   static const String apiBaseUrl = 'http://10.0.2.2:8000/api/v1'; // Android emulator
-  static const String apiBaseUrlDesktop = 'http://localhost:8000/api/v1';
+  static const String apiBaseUrlDesktop = 'http://127.0.0.1:8000/api/v1';
 
   // Token storage keys
   static const String accessTokenKey = 'access_token';

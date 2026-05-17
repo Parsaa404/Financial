@@ -14,7 +14,6 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   int _currentStep = 0;
   final Map<String, String> _answers = {};
-  bool _loading = false;
 
   final List<Map<String, dynamic>> _questions = [
     {'id': 'goal', 'question': "What's your main financial goal?", 'options': [
@@ -50,7 +49,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   ];
 
   Future<void> _complete() async {
-    setState(() => _loading = true);
     try {
       await ApiClient().dio.post('/onboarding/complete', data: {'answers': _answers});
       if (mounted) context.go('/');

@@ -1,0 +1,41 @@
+name: finance_app
+description: "Financial Decision Intelligence — your smart money companion."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^9.1.0
+  equatable: ^2.0.7
+
+  # Routing
+  go_router: ^15.1.2
+
+  # Networking
+  dio: ^5.8.0
+
+  # Local storage
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.4
+
+  # UI
+  fl_chart: ^0.70.2
+  shimmer: ^3.0.0
+  google_fonts: ^6.2.1
+  gap: ^3.0.1
+  intl: ^0.20.2
+  percent_indicator: ^4.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

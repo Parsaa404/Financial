@@ -1,0 +1,43 @@
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.18
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.1
+psycopg2-binary==2.9.10
+
+# Pydantic & settings
+pydantic[email]==2.10.4
+pydantic-settings==2.7.1
+
+# Auth
+python-jose[cryptography]==3.3.0
+bcrypt==4.2.1
+passlib[bcrypt]==1.7.4
+
+# HTTP client
+httpx==0.28.1
+
+# Cache
+redis[hiredis]==5.2.1
+
+# Task queue
+celery[redis]==5.4.0
+
+# AI providers
+groq==0.14.0
+google-generativeai==0.8.4
+
+# CSV processing
+python-dateutil==2.9.0
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
+
+# Utilities
+orjson==3.10.13
